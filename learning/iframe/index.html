@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ukažka tagu iframe</title>
+    </head>
+    <body>
+        <h1>Ukážka práce s tagom iframe</h1>
+        <p>Po kliknutí na štvorec, sa presunie a zmeni farbu v rámci canvasu.<br>
+        Pozor iframe je samostatná stránka, takže na príkazové skratky s klávesnice nereaguje, lebo tie su zachytávané nadstránkou.<br>
+        Stránka v iframe neviem operovať s elementami stránky v ktorom je iframe uložený.</p>
+        <iframe src="iframe.html" width="640" height="485"> 
+            Tvoj prehliadač nepodporuje tag iframe!
+        </iframe>
+        <!--Medzi iframe tagy sa dáva text pre prehliadače nepodporujúce tento element.
+            iframe ma atributy: 
+            "src" čo je url na stránku
+            "width" šírka vnútornej stránky. V mojom prípade je rovnaká ako canvas nachádzajúci sa v nej.
+            "height" výška vnútornej stránky. U mna je o 5px väčšia kvôli tomu že tag body si pridá automaticky na výške stránky
+            ostatné atributy nájdeš na W3schools a však v našom prípade ich nepotrebuješ.
+            -->
+    </body>
+</html>
