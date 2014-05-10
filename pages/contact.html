@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<meta charset="utf-8"> 
+<title>Kontakt</title>
+<LINK rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+	<body>
+			<header class="header">Kontakt
+			</header>
+			
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">Home page</a></li>
+					<li><a href="us.html">To sme my...</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+					<li><a href="work.html">Praca na projekte</a></li>
+					<li><a href="names.html">Meniny</a></li>
+					<li><a href="games.html">Hry</a></li>
+				</ul>
+			</nav>
+			
+			<article>
+			<section>
+				<form action="mailto:nejakymail@gmail.com" method="POST" id="contactFormular">
+			
+	
+			<fieldset>
+			<legend>Kontaktný formulár</legend>
+				Meno:<br>																									
+					<input type="text" name="meno" id="meno" size="30" placeholder="Meno" required pattern="[A-Z \Č \Š \Ž \Ň \Á \É \Í \Ó \Ú \Ť \Ľ \Ŕ]{1}[a-z \ľ \š \č \ť \ž \ý \á \í \é \ú \ä \ň \ô \ŕ \ĺ]{1,}" title="Prvé písmeno musí byť veľké" onChange="checkName(this)">
+					<br><br>
+				Priezvisko:<br>
+					<input type="text" name="priezvisko" id="priezvisko" size="30" placeholder="Priezvisko" required pattern="[A-Z \Č \Š \Ž \Ň \Á \É \Í \Ó \Ú \Ť \Ľ \Ŕ]{1}[a-z \ľ \š \č \ť \ž \ý \á \í \é \ú \ä \ň \ô \ŕ \ĺ]{1,}" title="Prvé písmeno musí byť veľké" onChange="checkName(this)">
+					<br><br>
+				Email:<br>
+					<input type="text" name="mail" id="mail" size="30" placeholder="tvoj@mail.sk" required pattern="[A-Z a-z 0-9 \. \_]{3,}@[A-Z a-z 0-9]{1,}\.[A-Z a-z 0-9]{2,4}$" title="Zadaj mail vo formáte xxx@x.xx" onChange="checkMail(this)">		
+					<br><br>
+				Správa<br>
+					<textarea name="info" id="info" rows="5" cols="65"required></textarea><br><br>
+			</fieldset>
+		<input type="submit" value="Send" id="sendButton" disabled>
+	</form>
+					
+			</section>
+			</article>
+ 
+			<footer class="footer">
+			Copyright©: TINA 2014
+			</footer>
+	</body>
+</html>
