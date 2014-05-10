@@ -2,7 +2,7 @@ var kalendar;
 var searchedBy;
 
 window.onload = function(){
-            showMeniny("meniny"); //sem treba doplniť ID elementu v headery kam to písať dátum s meninami
+            showMeniny("meniny"); //sem treba doplniť ID elementu v headery kam to má písať dátum s meninami
             }
 
 function showMeniny(elementID){
