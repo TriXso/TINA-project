@@ -81,6 +81,7 @@ article {
 section {
   padding: 25px;
   width: 775px;
+  height: auto;
 }
 
 article p {
