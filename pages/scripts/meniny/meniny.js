@@ -1,11 +1,7 @@
 var kalendar;
 var searchedBy;
 
-window.onload = function(){
-            showMeniny("meniny"); //sem treba doplniť ID elementu v headery kam to má písať dátum s meninami
-            }
-
-function showMeniny(elementID){
+function showMeniny(elementID){ //táto funkcia sa sa musí volať v window.onload; elemntID je id elementu pre vypisovanie menín;
     xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","meniny.xml",false);
     xmlhttp.send();
