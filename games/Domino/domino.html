@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Domino - hra</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script language="javascript" type="text/javascript">
+  var hrac1,hrac2,hrac3,hrac4;
+  var akutalnyHrac = 0;
+  var kocky=new Array();
+  var kocky1=new Array();
+  var kocky2=new Array();
+  var kocky3=new Array();
+  var kocky4=new Array();
+  var pocetKociek=new Array();
+
+  shuffle = function(v){
+    for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+    return v;
+  };
+
+  function vytvorKocky(){
+    var poradieKocky=0;
+    for (var i=0;i<=27;i++){
+      kocky[i] = new Array();
+    }
+    for (i=0;i<=6;i++){
+     for (j=i;j<=6;j++){
+        kocky[poradieKocky][1]=i;
+        kocky[poradieKocky][2]=j;
+        poradieKocky++;
+     }
+    }
+  }
+
+  function startHry(){
+    vytvorKocky();
+    priradKocky();
+
+  }
+
+  function priradKocky(){
+    for(var i=0;i<28;i++){
+      pocetKociek[i]=i;
+    }
+    shuffle(pocetKociek);
+
+    for(var i=0;i<7;i++){
+      if(pocetKociek[i]==27){
+        aktualnyHrac=1;
+      }
+      kocky1[i]=pocetKociek[i];
+    }
+
+    for(var i=7;i<14;i++){
+    if(pocetKociek[i]==27){
+        aktualnyHrac=2;
+    }
+      kocky2[i-7]=pocetKociek[i];
+    }
+
+    for(var i=14;i<21;i++){
+      if(pocetKociek[i]==27){
+        aktualnyHrac=3;
+      }
+      kocky3[i-7]=pocetKociek[i];
+    }
+    for(var i=21;i<28;i++){
+      if(pocetKociek[i]==27){
+        aktualnyHrac=4;
+      }
+      kocky4[i-7]=pocetKociek[i];
+    }
+  }
+
+</script>
+</head>
+<body>
+  <section id="content">
+    <section id="main_content" class="domino">
+      <div id="hraciaPlocha">
+        <table id="tabulkaKociek">
+          <tbody>
+            <tr><td><img src="" height="40px" width="40px" name="obr1"></td><td><img src="" height="40px" width="40px" name="obr2"></td><td><img src="" height="40px" width="40px" name="obr3"></td><td><img src="" height="40px" width="40px" name="obr4"></td><td><img src="" height="40px" width="40px" name="obr5"></td><td><img src="" height="40px" width="40px" name="obr6"></td><td><img src="" height="40px" width="40px" name="obr7"></td><td><img src="" height="40px" width="40px" name="obr8"></td><td><img src="" height="40px" width="40px" name="obr9"></td><td><img src="" height="40px" width="40px" name="obr10"></td><td><img src="" height="40px" width="40px" name="obr11"></td><td><img src="" height="40px" width="40px" name="obr12"></td><td><img src="" height="40px" width="40px" name="obr13"></td><td><img src="" height="40px" width="40px" name="obr14"></td><td><img src="" height="40px" width="40px" name="obr15"></td><td><img src="" height="40px" width="40px" name="obr16"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr56"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr17"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr55"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr18"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr54"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr19"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr53"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr20"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr52"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr21"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr51"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr22"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr50"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr23"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr49"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr24"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr48"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr25"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr47"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr26"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr46"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr27"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr45"></td><td colspan="14"></td><td><img src="" height="40px" width="40px" name="obr28"></td></tr>
+            <tr><td><img src="" height="40px" width="40px" name="obr44"></td><td><img src="" height="40px" width="40px" name="obr43"></td><td><img src="" height="40px" width="40px" name="obr42"></td><td><img src="" height="40px" width="40px" name="obr41"></td><td><img src="" height="40px" width="40px" name="obr40"></td><td><img src="" height="40px" width="40px" name="obr39"></td><td><img src="" height="40px" width="40px" name="obr38"></td><td><img src="" height="40px" width="40px" name="obr37"></td><td><img src="" height="40px" width="40px" name="obr36"></td><td><img src="" height="40px" width="40px" name="obr35"></td><td><img src="" height="40px" width="40px" name="obr34"></td><td><img src="" height="40px" width="40px" name="obr33"></td><td><img src="" height="40px" width="40px" name="obr32"></td><td><img src="" height="40px" width="40px" name="obr31"></td><td><img src="" height="40px" width="40px" name="obr30"></td><td><img src="" height="40px" width="40px" name="obr29"></td></tr>
+          </tbody>
+        </table>
+        <center><button type="button" onclick="startHry()">Spustiť</button></center>
+      </div>
+    </section>
+  </section>
+</body>
+</html>
