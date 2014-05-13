@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Richard Néveri">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script language="javascript" src="jquery/jquery-2.1.1.min.js"></script>
+<script language="javascript" src="mainScript.js"></script>
+<title>Tripple Triad</title>
+</head>
+<body>
+  <div id="gameContainer">
+       
+    <div id="turn"></div>
+
+  <!--Karty hráča 1-->
+    
+    <div id="cardsContainerTwo">
+    <div id="player1Text">
+      <p class="playerName">Hráč 1</p>
+      <p id="playerScoreOne" class="playerScore"></p>
+    </div>
+    
+    <div id="cardContainer10" class="cardContainer" onclick="javascript:activateCard(this, true, 1, 0)">
+      <div class="card player1">
+         <div class="top"><div id="topx10" class="topValue"></div></div><div class="right"><div id="rightx10" class="rightValue"></div></div><div class="bottom"><div id="bottomx10" class="bottomValue"></div></div><div class="left"><div id="leftx10" class="leftValue"></div></div>
+      </div>
+    </div>
+  
+    <div id="cardContainer11" class="cardContainer" onclick="javascript:activateCard(this, true, 1, 1)">
+      <div class="card player1">
+         <div class="top"><div id="topx11"  class="topValue"></div></div><div class="right"><div id="rightx11" class="rightValue"></div></div><div class="bottom"><div id="bottomx11" class="bottomValue"></div></div><div class="left"><div  id="leftx11" class="leftValue"></div></div>
+      </div>
+    </div>
+    
+    <div id="cardContainer12" class="cardContainer" onclick="javascript:activateCard(this, true, 1, 2)">
+      <div class="card player1">
+         <div class="top"><div id="topx12"  class="topValue"></div></div><div class="right"><div id="rightx12" class="rightValue"></div></div><div class="bottom"><div id="bottomx12" class="bottomValue"></div></div><div class="left"><div  id="leftx12" class="leftValue"></div></div>
+      </div>
+    </div>
+    
+    <div id="cardContainer13" class="cardContainer" onclick="javascript:activateCard(this, true, 1, 3)">
+      <div class="card player1">
+         <div class="top"><div id="topx13"  class="topValue"></div></div><div class="right"><div id="rightx13" class="rightValue"></div></div><div class="bottom"><div id="bottomx13" class="bottomValue"></div></div><div class="left"><div  id="leftx13" class="leftValue"></div></div>
+      </div>
+    </div>
+    
+    <div id="cardContainer14" class="cardContainer" onclick="javascript:activateCard(this, true, 1, 4)">
+      <div class="card player1">
+         <div class="top"><div id="topx14"  class="topValue"></div></div><div class="right"><div id="rightx14" class="rightValue"></div></div><div class="bottom"><div id="bottomx14" class="bottomValue"></div></div><div class="left"><div  id="leftx14" class="leftValue"></div></div>
+      </div>
+    </div>
+    </div>
+  
+    <!--Hracie pole-->
+  
+    <div id="gameBoard">
+    
+    <!--Stlpec 3-->
+    <div id="boardColumn3" class="boardColumn">
+    <div id="cardContainerX02" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 0, 2)">
+      <div id="board02" class="card">
+         
+      </div>
+    </div>
+    
+    <div id="cardContainerX12" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 1, 2)">
+      <div id="board12" class="card">
+         
+      </div>
+    </div>
+    
+    <div id="cardContainerX22" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 2, 2)">
+      <div id="board22" class="card">
+         
+      </div>
+    </div>
+        
+    </div>
+    
+    <!--Stlpec 2-->
+    <div id="boardColumn2" class="boardColumn">
+    <div id="cardContainerX01" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 0, 1)">
+      <div id="board01" class="card">
+         
+      </div>
+    </div>
+    
+    <div id="cardContainerX11" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 1, 1)">
+      <div id="board11" class="card">
+      
+      </div>
+    </div>
+    
+    <div id="cardContainerX21" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 2, 1)">
+      <div id="board21" class="card">
+      
+      </div>
+    </div>
+    </div>
+    
+     <!--Stlpec 1-->
+    <div id="boardColumn1" class="boardColumn"> 
+    <div id="cardContainerX00" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 0, 0)">
+      <div id="board00" class="card">
+      
+      </div>
+    </div>
+  
+    <div id="cardContainerX10" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 1, 0)">
+      <div id="board10" class="card">
+     
+      </div>
+    </div>
+    
+    <div id="cardContainerX20" class="cardBoardContainer" onclick="javascript:activateCard(this, false, 6, 6, 2, 0)">
+      <div id="board20" class="card">
+     
+      </div>
+    </div>
+    </div>   
+    
+    </div>
+    
+  <!--Karty hráča 2-->
+    <div id="cardsContainerOne">
+    
+    <div id="player2Text">
+      <p class="playerName">Hráč 2</p>
+      <p id="playerScoreTwo" class="playerScore"></p>
+    </div>
+    
+    <div id="cardContainer20" class="cardContainer" onclick="javascript:activateCard(this, true, 2, 0)">
+      <div class="card player2">
+         <div class="top"><div id="topx20" class="topValue"></div></div><div class="right"><div id="rightx20" class="rightValue"></div></div><div class="bottom"><div id="bottomx20" class="bottomValue"></div></div><div class="left"><div id="leftx20" class="leftValue"></div></div>
+      </div>
+    </div>
+  
+    <div id="cardContainer21" class="cardContainer" onclick="javascript:activateCard(this, true, 2, 1)">
+      <div class="card player2">
+         <div class="top"><div id="topx21" class="topValue"></div></div><div class="right"><div id="rightx21" class="rightValue"></div></div><div class="bottom"><div id="bottomx21" class="bottomValue"></div></div><div class="left"><div id="leftx21" class="leftValue"></div></div>
+      </div>
+    </div>
+    
+    <div id="cardContainer22" class="cardContainer" onclick="javascript:activateCard(this, true, 2, 2)">
+      <div class="card player2">
+         <div class="top"><div id="topx22" class="topValue"></div></div><div class="right"><div id="rightx22" class="rightValue"></div></div><div class="bottom"><div id="bottomx22" class="bottomValue"></div></div><div class="left"><div id="leftx22" class="leftValue"></div></div>
+      </div>
+    </div>
+    
+    <div id="cardContainer23" class="cardContainer" onclick="javascript:activateCard(this, true, 2, 3)">
+      <div class="card player2">
+         <div class="top"><div id="topx23" class="topValue"></div></div><div class="right"><div id="rightx23" class="rightValue"></div></div><div class="bottom"><div id="bottomx23" class="bottomValue"></div></div><div class="left"><div id="leftx23" class="leftValue"></div></div>
+      </div>
+    </div>
+    
+    <div id="cardContainer24" class="cardContainer" onclick="javascript:activateCard(this, true, 2, 4)">
+      <div class="card player2">
+        <div class="top"><div id="topx24" class="topValue"></div></div><div class="right"><div id="rightx24" class="rightValue"></div></div><div class="bottom"><div id="bottomx24" class="bottomValue"></div></div><div class="left"><div id="leftx24" class="leftValue"></div></div>
+      </div>
+    </div>
+    </div>
+    
+    <div id="winnerWrapper">
+      <div id="winnerContainer">
+        <div id="winnerContainerText">
+        </div>
+      </div>
+    </div> 
+     
+  </div>
+</body>
+</html>
