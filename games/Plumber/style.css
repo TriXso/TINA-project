@@ -1,0 +1,69 @@
+body {
+    margin:0;
+    padding:0;
+    float:left;
+}
+
+canvas {
+    display:block;
+}
+
+#graph_frame{
+    display:block;
+    margin:0;
+    padding:0;
+    left:0;
+    top:0;
+    width:640px;
+    height:560px;
+    background-color:#00EEFF;
+}
+
+#graph{
+    height:280px;
+}
+
+#info {
+    background-color:#00EEFF;
+}
+
+#left {
+    width:320px;
+    float:left;
+    background-color:#00EEFF;
+}
+
+#right {
+    width:320px;
+    float:right;
+    background-color:#00EEFF;
+}
+
+#top {
+    float:left;
+    margin:0;
+}
+
+#label{
+    margin-top:0;
+    margin-left:20px;
+    margin-bottom:3px;
+    font-size:20px;
+}
+
+#overall {
+    margin-left:20px;
+    font-size:25px;
+}
+
+#top_label{
+    margin-bottom:2px;
+
+}
+
+#button {
+    margin-left:20px;
+    width:150px;
+    height:75px;
+}
+

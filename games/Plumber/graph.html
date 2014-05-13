@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Plumber v1.0</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-1.11.0.min.js"></script>
+        <script src="jquery.flot.js"></script>
+        <script src="jquery.flot.selection.js"></script>
+        <script src="levels.js"></script>
+        <script src="graph.js"></script>
+    </head>
+    <body>
+        <div id="graph_frame">
+            <p id="label">Posledných 20 hier</p>
+            <div id="graph"></div>
+            <div id="info">
+                <div id="left">
+                    <p id="overall"></p>
+                    <button id="button" onclick="toGame()">Späť do hry</button>
+                </div>
+                <div id="right">
+                    <p id="top_label">TOP 10</p>
+                    <ul id="top">
+                        <li id="0"></li>
+                        <li id="1"></li>
+                        <li id="2"></li>
+                        <li id="3"></li>
+                        <li id="4"></li>
+                        <li id="5"></li>
+                        <li id="6"></li>
+                        <li id="7"></li>
+                        <li id="8"></li>
+                        <li id="9"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
