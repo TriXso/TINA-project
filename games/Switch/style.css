@@ -1,0 +1,141 @@
+﻿html, body {
+			
+			background: #303030;
+			
+			font-family:Impact, Charcoal, sans-serif;
+			color:white;
+			
+        }
+
+
+#wraper{			
+		width: 500px;
+		height: 500px;
+		margin: 0 auto;		
+}		
+
+#nadpis{
+text-align: center;
+margin: 0 auto;
+}
+#vyhra{
+text-align: center;
+margin: 0 auto;
+}
+#vypis{
+text-align: center;
+margin: 0 auto;
+}
+
+#ovladanie{
+width: 300px;
+margin: 0 auto;
+
+}
+
+#tlacidlograf{
+float:right;
+
+}
+
+#tlacidloZacni {
+margin: 0 auto;
+position: relative;
+color: gray;
+}
+
+#spat{
+margin-left:45%;
+}
+
+#oknoUvod {
+display: inline;
+vertical-align: middle;
+text-align: center;
+margin-top: 0px;
+}
+
+#over{
+font-size: 40px;
+color: yellow;
+}
+
+#vyhra{
+font-size: 50px;
+color: yellow;
+}
+
+#vypis{
+font-size: 30px;
+color: gray;
+}
+
+#nadpis{
+font-size: 30px;
+color: yellow;
+}
+
+#oknoKoniec {
+display: none;
+vertical-align: middle;
+text-align: center;
+margin-top: 0px;
+}
+
+
+#inputy {
+width: auto;
+height: auto;
+margin-left: auto;
+margin-top: 220px;
+margin-right: auto;
+}
+
+#skoreTab{
+margin: 0 auto;
+}
+
+#skoreTab p{
+margin-top: 0;
+margin-bottom: 0;
+}
+
+#game{
+text-align:center;
+}
+#score{
+color:yellow;
+font-size:20px;
+}
+#cas{
+color:yellow;
+font-size:20px;
+}
+
+input[type="button"] {
+	cursor:pointer;
+    color: yellow;
+	font-family:Impact, Charcoal, sans-serif;
+	font-size: 20px;
+    background: none;
+	border: 0;
+}
+
+
+
+.back {
+display: none;
+background: rgba(0,0,0,0.95);
+width: 400px;
+height: 500px;
+position: absolute;
+color: white;
+margin-top: -530px;
+padding: 25px;
+}
+			
+.plocha{
+width: 100px; height: 100px;
+float:left;
+}
+
