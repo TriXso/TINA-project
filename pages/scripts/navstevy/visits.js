@@ -1,4 +1,7 @@
 
+//je potreba aby divka do ktorých má renderovať text mali id "last_visit" a "visit_number"
+
+
 function setVisit(){ //táto funkcia musí byť v window.onload;
     var visit = {
         lastVisit: new Date(),
