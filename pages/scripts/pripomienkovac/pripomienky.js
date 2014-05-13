@@ -12,11 +12,7 @@ var notes;
 var lastIndex = 0;
 
 
-window.onload = function(){
-    setReminder();
-}
-
-function setReminder(){
+function setReminder(){ //táto funkcia sa musí volať v window.onload
     reminder = document.getElementById("reminder"); //id kompletného bloku pre pripomienkovač
     newNote = document.getElementById("new_note"); //id texarea elementu pre nové pripomienky
     notesDiv = document.getElementById("notes"); //id bloku pre staré pripomienky
