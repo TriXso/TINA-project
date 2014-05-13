@@ -1,15 +1,8 @@
 var kalendar;
 var searchedBy;
 
-<<<<<<< HEAD
-window.onload = function(){
-            showMeniny("nameDayDisplay"); //sem treba doplniť ID elementu v headery kam to má písať dátum s meninami
-            }
 
-function showMeniny(elementID){
-=======
 function showMeniny(elementID){ //táto funkcia sa sa musí volať v window.onload; elemntID je id elementu pre vypisovanie menín;
->>>>>>> 1749a45c0e87d9ff235041b69740bcd346704d56
     xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET","scripts/meniny/meniny.xml",false);
     xmlhttp.send();
