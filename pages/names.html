@@ -4,13 +4,20 @@
 <meta charset="utf-8"> 
 <title>Meniny</title>
 <LINK rel="stylesheet" type="text/css" href="css/style.css">
+<script language="javascript" src="scripts/pripomienkovac/pripomienky.js"></script>
+<script language="javascript" src="scripts/meniny/latinise.min.js"></script>
+<script language="javascript" src="scripts/meniny/meniny.js"></script>
 </head>
 
 	<body>
 			<header class="header">
         <div class="centered">
           <h1>Meniny a ich dátumy</h1>
-          <!-- ++Meniny + ++Dátum prístupu -->
+          <div id="nameDayContainer">
+          <div id="nameDayDisplay">
+          
+          </div>
+          </div>
         </div>
 			</header>
       
@@ -55,8 +62,12 @@
       <!-- *************************** -->
         
         <aside>
-        <!-- ++Pripomienky -->
         <p class="smallHeader">Pripomienkovač</p>
+          <div id="reminder">
+            <textarea type="textarea" id="new_note" rows="3" placeholder="Zadaj text pripomienky a stlač Enter."></textarea>
+            <div id="notes">
+            </div>        
+          </div>
         </aside>
       
       <!-- *************************** -->
@@ -64,11 +75,14 @@
       <!-- *************************** -->
       
 			<section>
-				<h2>Futurama</h2>
-	  
-					<p>
-					Scruffy údržbár. Nikdy nevidno že by niečo robil, väčšinou si číta pornografické časopisy alebo stojí pri dverách. Neuveriteľne pomaly pojedá čipsy. Jeho najčastejšia fráza: Som Scruffy. Údržbár.   
-					</p>
+				
+        <h3>Program na vyhľadávanie dátumu mením a mena pre daný dátum</h3>
+
+        <p>Pre vyhľadanie konkrétneho dátumu dňa mením pre dané meno napíšte do vyhľadávacieho poľa napríklad "Patrik" a stlač tlačidlo "Hľadaj".
+           Pre zobrazenie mena pre daný dátum zadaj dátum a stlač tlačidlo "Hľadaj".</p>
+        <input id="search_input" type="text" onchange="checkMeninySearch('search_input')">
+        <button id="search" onclick="searchMeniny('search_input','text')">Hľadaj</button>
+        <p id="text"></p>
 					
 			</section>
       </div>

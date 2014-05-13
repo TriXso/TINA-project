@@ -14,7 +14,7 @@ body {
   height: 100%;  
 }
 
-h1, h2, p, a {
+h1, h2, h3, p, a {
   font-family: Verdana, Sans-Sherif;
   margin: 0;
 }
@@ -23,6 +23,10 @@ h1 {
   padding: 40px;
   margin: 0;
   color: white;
+}
+
+h3 {
+  font-size: 14px;
 }
 
 /* -----Všeobecné classy----- */
@@ -80,7 +84,7 @@ article {
 
 section {
   padding: 25px;
-  width: 775px;
+  width: 750px;
   height: auto;
 }
 
@@ -93,7 +97,7 @@ article p {
 
 aside {
   float: right;
-  width: 175px;
+  width: 200px;
   min-height: 200px;
   height: auto;
   margin-top: 25px;
@@ -136,4 +140,65 @@ footer {
 
 footer p {
   padding: 25px;
+}
+
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*                                                                         */
+/*             CSS pre "pluginy" a unikátne prvky                          */
+/*                                                                         */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+/* -----Primoniekovac----- */
+
+#reminder {
+  margin-left: 15px;
+}
+
+#new_note {
+  line-height: 25px;
+  padding: 5px;
+  color: #999999;
+}
+
+#note_text, #note_time {
+  padding: 5px;
+}
+
+#note_text {
+  word-break: break-all;
+}
+
+/* -----Meniny----- */
+
+#nameDayContainer {
+  width: 300px;
+  height: 40px;
+  background: white;
+  opacity: .9;
+  position: relative;
+  top: -33px;
+  left: 700px;
+  text-align: center;
+  vertical-align: center;
+}
+
+#nameDayDisplay {
+  padding-top: 13px;
+  font-family: Verdana, Sans-Sherif;
+  font-size: 12px;
+}
+
+/* --- Meniny tooltip ---*/
+
+#tooltip {
+  background: #FBFFC1;
+  border: 2px solid #FFB33F;
+}
+
+/* --- Form ---*/
+
+fieldset {
+  border: 1px solid #ededed;
 }

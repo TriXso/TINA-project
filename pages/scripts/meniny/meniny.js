@@ -2,12 +2,12 @@ var kalendar;
 var searchedBy;
 
 window.onload = function(){
-            showMeniny("meniny"); //sem treba doplniť ID elementu v headery kam to má písať dátum s meninami
+            showMeniny("nameDayDisplay"); //sem treba doplniť ID elementu v headery kam to má písať dátum s meninami
             }
 
 function showMeniny(elementID){
     xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","meniny.xml",false);
+    xmlhttp.open("GET","scripts/meniny/meniny.xml",false);
     xmlhttp.send();
     xmlDoc=xmlhttp.responseXML;
     element = document.getElementById(elementID);

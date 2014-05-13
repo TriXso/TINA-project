@@ -4,13 +4,20 @@
 <meta charset="utf-8"> 
 <title>Hry</title>
 <LINK rel="stylesheet" type="text/css" href="css/style.css">
+<script language="javascript" src="scripts/pripomienkovac/pripomienky.js"></script>
+<script language="javascript" src="scripts/meniny/latinise.min.js"></script>
+<script language="javascript" src="scripts/meniny/meniny.js"></script>
 </head>
 
 	<body>
 			<header class="header">
         <div class="centered">
           <h1>Zahraj sa</h1>
-          <!-- ++Meniny + ++Dátum prístupu -->
+          <div id="nameDayContainer">
+          <div id="nameDayDisplay">
+          
+          </div>
+          </div>
         </div>
 			</header>
       
@@ -55,8 +62,12 @@
       <!-- *************************** -->
         
         <aside>
-        <!-- ++Pripomienky -->
         <p class="smallHeader">Pripomienkovač</p>
+          <div id="reminder">
+            <textarea type="textarea" id="new_note" rows="3" placeholder="Zadaj text pripomienky a stlač Enter."></textarea>
+            <div id="notes">
+            </div>        
+          </div>
         </aside>
       
       <!-- *************************** -->
