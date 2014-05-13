@@ -136,7 +136,8 @@ footer {
   position: absolute;
   border-top: 1px solid #ededed;
   bottom: 0;  
-}
+  position: relative;
+  }
 
 footer p {
   padding: 25px;

@@ -9,9 +9,9 @@
 
 
 #wraper{			
-		width: 500px;
-		height: 500px;
-		margin: 0 auto;		
+		width: 400px;
+		height: 460px;
+		
 }		
 
 #nadpis{
@@ -126,7 +126,7 @@ input[type="button"] {
 .back {
 display: none;
 background: rgba(0,0,0,0.95);
-width: 400px;
+width: 410px;
 height: 500px;
 position: absolute;
 color: white;
